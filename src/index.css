@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "pricedown";
+  src: url("./pricedown.otf");
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "pricedown";
+  background-color: black;
+}
+
+/* Social icon styles for footer */
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  background-color: #2d2e32;
+  border: 2px solid #2d2e32;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: transform 450ms ease, background-color 450ms ease, color 450ms ease, border-color 450ms ease;
+}
+.social-icon i {
+  font-size: 18px;
+}
+.social-icon:hover {
+  transform: rotate(360deg);
+  background-color: #ffffff;
+  color: #2d2e32;
+  border-color: #ffffff;
+}
